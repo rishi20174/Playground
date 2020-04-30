@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int sun,mon,tue,wed,thur,fri,sat,sum=0;
+  std::cin>>sun>>mon>>tue>>wed>>thur>>fri>>sat;
+  if(sun>8)
+    sun=(sun*100)+15*(sun-8);
+  else
+    sun=sun*100;
+   if(mon>8)
+    mon=(mon*100)+15*(mon-8);
+  else
+    mon=mon*100;
+   if(tue>8)
+    tue=(tue*100)+15*(tue-8);
+  else
+    tue=tue*100;
+   if(wed>8)
+    wed=(wed*100)+15*(wed-8);
+  else
+    wed=wed*100;
+  if(thur>8)
+    thur=(thur*100)+15*(thur-8);
+  else
+    thur=thur*100;
+   if(fri>8)
+    fri=(fri*100)+15*(fri-8);
+  else
+    fri=fri*100;
+   if(sat>8)
+    sat=(sat*100)+15*(sat-8);
+  else
+    sat=sat*100;
+  sum=sun+mon+tue+wed+thur+fri+sat;
+  if(sun>0)
+    sum=sum+sun*0.50;
+  if(sat>0)
+    sum=sum+sat*0.25;
+  std::cout<<sum;
+}
